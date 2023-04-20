@@ -36,7 +36,7 @@ function CustomNavbar() {
             }}
           >
             <img
-              src="src\images\M6.png"
+              src="/images/M6.png"
               width="40"
               height="40"
               className="d-inline-block align-center ms-2 me-2"
