@@ -5,4 +5,4 @@
 
 ## Zobacz moją stronę na żywo
 
-[Przejdź do strony](http://twojastrona.pl)
+[Przejdź do strony](https://mskrobot.github.io/)
