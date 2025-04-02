@@ -40,7 +40,9 @@ Write-Host "`n===> Usuwanie starej zawartości z 'gh-pages'..." -ForegroundColor
 Get-ChildItem -Force | Where-Object { $_.Name -notin '.git', '.gitignore' } | Remove-Item -Recurse -Force -ErrorAction SilentlyContinue
 
 # Kopiujemy ręcznie zawartość public/ (np. public/images) do folderu builda
-Copy-Item ../public/* $tempPath -Recurse -Force
+if (Test-Path "./public") {
+    Copy-Item "./public/*" $tempPath -Recurse -Force
+}
 
 # Wrzucenie nowego builda
 Write-Host "`n===> Wrzucanie nowej zawartości..." -ForegroundColor Cyan

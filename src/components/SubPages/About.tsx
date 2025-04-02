@@ -208,7 +208,7 @@ function About() {
                   <h5 className="card-header">Hobbies</h5>
                   <p className="card-text">
                     {isHobbiesExpanded
-                      ? "In my free time, I enjoy pursuing a variety of hobbies that keep me active and engaged. I'm an avid sports enthusiast, and I enjoy cycling and playing football. In addition to sports, I also have a passion for music and have been playing both piano and guitar for several years. I find that playing music is not only a creative outlet, but it also helps me unwind ans stay focused. I also enjoy the challenge of algorithmic problems, I find solving them very rewarding. These hobbies have not only brought me a lot of joy, but also keep my body and mind in good shape."
+                      ? "In my free time, I enjoy pursuing a variety of hobbies that keep me active and engaged. I'm an avid sports enthusiast, and I enjoy cycling and playing football. In addition to sports, I also have a passion for music and have been playing both piano and guitar for several years. I find that playing music is not only a creative outlet, but it also helps me unwind and stay focused. I also enjoy the challenge of algorithmic problems, I find solving them very rewarding. These hobbies have not only brought me a lot of joy, but also keep my body and mind in good shape."
                       : "In my free time, I enjoy pursuing a variety of hobbies that keep me active and engaged. I'm an avid sports enthusiast, and I enjoy cycling and playing football. In addition to sports, I also have a passion for ..."}
                     <a
                       href="#about"
