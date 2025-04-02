@@ -81,12 +81,10 @@ function About({ isLightMode }: LandingProps) {
                 <div className="card-body">
                   <p className="text">
                     <span className="hello-there">Hello there!</span> I'm a
-                    21-year-old student living in Poland, and I'm currently on
-                    the lookout for my first commercial job. Coding is my
-                    passion and I have been studying computer science for the
-                    past two years, honing my skills in algorithms, data
-                    structures and web development. I'm eager to apply this
-                    knowledge in a professional setting.
+                    23-year-old student living in Poland, and I'm currently on
+                    the lookout for Junior Software Engineer position. I have experience from
+                    two internships - at Atlassian and Openx. I also did few projects as a freelancer.
+                    I tried few things like: Backend Software Engineer, SDET, Full-Stack and mobile developer.
                   </p>
                 </div>
               </div>
@@ -112,7 +110,7 @@ function About({ isLightMode }: LandingProps) {
                 <div className="card-body">
                   <h5 className="card-header">Education</h5>
                   <p className="card-text">
-                    I'm currently a second-year computer science student at
+                    I'm currently a third-year computer science student at
                     Jagiellonian University in Krakow, Poland. Prior to this, I
                     graduated from High School in Kielce, I did well on the
                     advanced level exams in subjects such as
