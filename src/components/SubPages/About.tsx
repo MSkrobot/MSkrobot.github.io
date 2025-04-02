@@ -170,8 +170,8 @@ function About() {
                   <h5 className="card-header">Education</h5>
                   <p className="card-text">
                     {isEducationExpanded
-                      ? "I'm currently a second-year computer science student at Jagiellonian University in Krakow, Poland. Prior to this, I graduated from High School in Kielce, I did well on the advanced level exams in subjects such as mathematics, English, and geography. In my time at university so far, I have completed numerous projects, both independently and as a part of a team. During this time, I have completed several courses that particularly interested me, for example Algorithms and Data Structures. I am always looking for ways to apply this knowledge to real-world problems."
-                      : "I'm currently a second-year computer science student at Jagiellonian University in Krakow, Poland. Prior to this, I graduated from High School in Kielce, I did well on the advanced level exams in subjects such as ..."}
+                      ? "I'm currently a third-year computer science student at Jagiellonian University in Krakow, Poland. Prior to this, I graduated from High School in Kielce, I did well on the advanced level exams in subjects such as mathematics, English, and geography. In my time at university so far, I have completed numerous projects, both independently and as a part of a team. During this time, I have completed several courses that particularly interested me, for example Algorithms and Data Structures. I am always looking for ways to apply this knowledge to real-world problems."
+                      : "I'm currently a third-year computer science student at Jagiellonian University in Krakow, Poland. Prior to this, I graduated from High School in Kielce, I did well on the advanced level exams in subjects such as ..."}
                     <a
                       href="#about"
                       onClick={(event) => {
