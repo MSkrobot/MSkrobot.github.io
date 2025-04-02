@@ -138,7 +138,7 @@ function About() {
                     Hi there! I'm a 23-year-old student living in Poland, and
                     I'm currently on the lookout for a commercial job.
                     Coding is my passion and I have been studying computer
-                    science for the past two years, honing my skills in
+                    science for the past two years, mastering my skills in
                     algorithms, data structures and web development. I'm eager
                     to apply this knowledge in a professional setting.
                   </p>
