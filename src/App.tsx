@@ -1,22 +1,40 @@
 import CustomNavbar from "./components/navBar";
 import "./App.css";
-import bigPhoto from "./images/M6.png";
-import Content from "./components/Content";
+import bgPhoto from "/images/M8.png";
+import Landing from "./components/SubPages/Landing";
+import About from "./components/SubPages/About";
+import Skills from "./components/SubPages/Skills";
+import Contact from "./components/SubPages/Contact";
+import { useState } from "react";
 
 function App() {
+  const [isLightMode, setIsLightMode] = useState(false);
+
+  // Handler function to toggle the dark mode
+  const handleDarkModeToggle = () => {
+    setIsLightMode(!isLightMode);
+  };
   return (
     <>
       <div
-        className="bg-dark bg-portrait"
+        className="bg-portrait"
         style={{
-          backgroundImage: `url(${bigPhoto})`,
+          backgroundImage: `url(${bgPhoto})`,
           backgroundPosition: "center center",
           backgroundAttachment: "fixed",
           display: "block",
         }}
       >
-        <CustomNavbar />
-        <Content />
+        <CustomNavbar
+          onLightModeToggle={handleDarkModeToggle}
+          isLightMode={isLightMode}
+        />
+        <div className="container-fluid">
+          <Landing isLightMode={isLightMode} />
+          <About isLightMode={isLightMode} />
+          <Skills isLightMode={isLightMode} />
+          <Contact isLightMode={isLightMode} />
+        </div>
       </div>
     </>
   );

@@ -1,68 +1,46 @@
-function Skills() {
+import "./../styles/CustomSkills.css";
+
+interface LandingProps {
+  isLightMode: boolean;
+}
+
+function Skills({ isLightMode }: LandingProps) {
   return (
     <>
       <div
-        className="row"
+        className={`row ${isLightMode ? "light-mode" : ""}`}
         id="skills"
-        style={{
-          height: "74px",
-          background:
-            "linear-gradient(to top, rgba(33, 37, 41, 0.4), rgba(238, 238, 242, 0.2))",
-        }}
       ></div>
-      <div
-        className="row"
-        id="skillsrow"
-        style={{
-          backgroundColor: "rgba(33, 37, 41, 0.99)",
-          minHeight: "calc(100vh - 74px)",
-          flexWrap: "wrap",
-          overflow: "auto",
-          paddingTop: "2vh",
-          paddingBottom: "0rem",
-          paddingLeft: "9rem",
-          paddingRight: "9rem",
-        }}
-      >
+      <div className={`row ${isLightMode ? "light-mode" : ""}`} id="skillsRow">
         <div className="col-lg-6 text-center">
-          <h5
-            className="h5-Technical"
-            style={{
-              color: "#84a59d",
-              fontFamily: "Ubuntu, sans-serif",
-              fontSize: "32px",
-              textShadow:
-                "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000",
-            }}
-          >
-            Technical Skills
-          </h5>
+          <h5 className="h5-header">Technical Skills</h5>
           <div
             className="accordion accordion-flush"
             id="accordion1"
             style={{ paddingBottom: "8vh" }}
           >
-            <div className="accordion-item">
+            <div className="accordion-item odd">
               <h2 className="accordion-header">
                 <button
-                  className="accordion-button collapsed"
+                  className="accordion-button odd collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne1"
+                  data-bs-target="#collapse1_1"
                   aria-expanded="false"
-                  aria-controls="collapseOne1"
+                  aria-controls="collapse1_1"
                 >
                   <img
+                    className="icon"
                     src="/images/html-5.png"
                     width="40"
                     height="40"
-                    style={{ marginRight: "4px" }}
+                    style={{ marginLeft: "0px", marginRight: "4px" }}
                   ></img>
                   HTML
                 </button>
               </h2>
               <div
-                id="collapseOne1"
+                id="collapse1_1"
                 className="accordion-collapse collapse"
                 data-bs-parent="#accordion1"
               >
@@ -81,21 +59,22 @@ function Skills() {
                   className="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo2"
+                  data-bs-target="#collapse1_2"
                   aria-expanded="false"
-                  aria-controls="collapseTwo2"
+                  aria-controls="collapse1_2"
                 >
                   <img
+                    className="icon"
                     src="/images/css-3.png"
                     width="40"
                     height="40"
-                    style={{ marginRight: "4px" }}
+                    style={{ marginLeft: "0px", marginRight: "4px" }}
                   ></img>
                   CSS
                 </button>
               </h2>
               <div
-                id="collapseTwo2"
+                id="collapse1_2"
                 className="accordion-collapse collapse"
                 data-bs-parent="#accordion1"
               >
@@ -108,27 +87,27 @@ function Skills() {
                 </div>
               </div>
             </div>
-            <div className="accordion-item">
+            <div className="accordion-item odd">
               <h2 className="accordion-header">
                 <button
-                  className="accordion-button collapsed"
+                  className="accordion-button odd collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree3"
+                  data-bs-target="#collapse1_3"
                   aria-expanded="false"
-                  aria-controls="collapseThree3"
+                  aria-controls="collapse1_3"
                 >
                   <img
+                    className="icon"
                     src="/images/js.png"
                     width="30"
                     height="30"
-                    style={{ marginRight: "8px", marginLeft: "6px" }}
                   ></img>
                   JavaScript
                 </button>
               </h2>
               <div
-                id="collapseThree3"
+                id="collapse1_3"
                 className="accordion-collapse collapse"
                 data-bs-parent="#accordion1"
               >
@@ -149,21 +128,21 @@ function Skills() {
                   className="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapse4"
+                  data-bs-target="#collapse1_4"
                   aria-expanded="false"
-                  aria-controls="collapse4"
+                  aria-controls="collapse1_4"
                 >
                   <img
+                    className="icon"
                     src="/images/python.png"
                     width="30"
                     height="30"
-                    style={{ marginRight: "8px", marginLeft: "6px" }}
                   ></img>
                   Python
                 </button>
               </h2>
               <div
-                id="collapse4"
+                id="collapse1_4"
                 className="accordion-collapse collapse"
                 data-bs-parent="#accordion1"
               >
@@ -177,27 +156,27 @@ function Skills() {
                 </div>
               </div>
             </div>
-            <div className="accordion-item">
+            <div className="accordion-item odd">
               <h2 className="accordion-header">
                 <button
-                  className="accordion-button collapsed"
+                  className="accordion-button odd collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapse5"
+                  data-bs-target="#collapse1_5"
                   aria-expanded="false"
-                  aria-controls="collapse5"
+                  aria-controls="collapse1_5"
                 >
                   <img
+                    className="icon"
                     src="/images/java.png"
                     width="30"
                     height="30"
-                    style={{ marginRight: "8px", marginLeft: "6px" }}
                   ></img>
                   Java
                 </button>
               </h2>
               <div
-                id="collapse5"
+                id="collapse1_5"
                 className="accordion-collapse collapse"
                 data-bs-parent="#accordion1"
               >
@@ -217,21 +196,21 @@ function Skills() {
                   className="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapse6"
+                  data-bs-target="#collapse1_6"
                   aria-expanded="false"
-                  aria-controls="collapse6"
+                  aria-controls="collapse1_6"
                 >
                   <img
+                    className="icon"
                     src="/images/c-.png"
                     width="30"
                     height="30"
-                    style={{ marginRight: "8px", marginLeft: "6px" }}
                   ></img>
                   C++
                 </button>
               </h2>
               <div
-                id="collapse6"
+                id="collapse1_6"
                 className="accordion-collapse collapse"
                 data-bs-parent="#accordion1"
               >
@@ -246,27 +225,27 @@ function Skills() {
                 </div>
               </div>
             </div>
-            <div className="accordion-item">
+            <div className="accordion-item odd">
               <h2 className="accordion-header">
                 <button
-                  className="accordion-button collapsed"
+                  className="accordion-button odd collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapse7"
+                  data-bs-target="#collapse1_7"
                   aria-expanded="false"
-                  aria-controls="collapse7"
+                  aria-controls="collapse1_7"
                 >
                   <img
+                    className="icon"
                     src="/images/sql-server.png"
                     width="30"
                     height="30"
-                    style={{ marginRight: "8px", marginLeft: "6px" }}
                   ></img>
                   MSSQL Server
                 </button>
               </h2>
               <div
-                id="collapse7"
+                id="collapse1_7"
                 className="accordion-collapse collapse"
                 data-bs-parent="#accordion1"
               >
@@ -284,46 +263,35 @@ function Skills() {
           </div>
         </div>
         <div className="col-lg-6 text-center">
-          <h5
-            className="h5-Other"
-            style={{
-              color: "#84a59d",
-              fontFamily: "Ubuntu, sans-serif",
-              fontSize: "32px",
-              textShadow:
-                "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000",
-            }}
-          >
-            Other Skills
-          </h5>
+          <h5 className="h5-header">Other Skills</h5>
           <div
             className="accordion accordion-flush"
-            id="accordionExample"
+            id="accordion2"
             style={{ paddingBottom: "8vh" }}
           >
-            <div className="accordion-item">
+            <div className="accordion-item odd">
               <h2 className="accordion-header">
                 <button
-                  className="accordion-button collapsed"
+                  className="accordion-button odd collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
+                  data-bs-target="#collapse2_1"
                   aria-expanded="false"
-                  aria-controls="collapseOne"
+                  aria-controls="collapse2_1"
                 >
                   <img
+                    className="icon"
                     src="/images/github.png"
                     width="30"
                     height="30"
-                    style={{ marginRight: "8px", marginLeft: "6px" }}
                   ></img>
                   GitHub
                 </button>
               </h2>
               <div
-                id="collapseOne"
+                id="collapse2_1"
                 className="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
+                data-bs-parent="#accordion2"
               >
                 <div className="accordion-body">
                   I have experience working with <strong>GitHub</strong> on
@@ -339,23 +307,23 @@ function Skills() {
                   className="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
+                  data-bs-target="#collapse2_2"
                   aria-expanded="false"
-                  aria-controls="collapseTwo"
+                  aria-controls="collapse2_2"
                 >
                   <img
-                    src="src/images/ux.png"
+                    className="icon"
+                    src="/images/ux.png"
                     width="30"
                     height="30"
-                    style={{ marginRight: "8px", marginLeft: "6px" }}
                   ></img>
                   UX/UI
                 </button>
               </h2>
               <div
-                id="collapseTwo"
+                id="collapse2_2"
                 className="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
+                data-bs-parent="#accordion2"
               >
                 <div className="accordion-body">
                   I feel confident in my knowledge of <strong>UX/UI </strong>
@@ -365,29 +333,29 @@ function Skills() {
                 </div>
               </div>
             </div>
-            <div className="accordion-item">
+            <div className="accordion-item odd">
               <h2 className="accordion-header">
                 <button
-                  className="accordion-button collapsed"
+                  className="accordion-button odd collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
+                  data-bs-target="#collapse2_3"
                   aria-expanded="false"
-                  aria-controls="collapseThree"
+                  aria-controls="collapse2_3"
                 >
                   <img
+                    className="icon"
                     src="/images/visual-studio.png"
                     width="30"
                     height="30"
-                    style={{ marginRight: "8px", marginLeft: "6px" }}
                   ></img>
                   Visual Studio
                 </button>
               </h2>
               <div
-                id="collapseThree"
+                id="collapse2_3"
                 className="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
+                data-bs-parent="#accordion2"
               >
                 <div className="accordion-body">
                   I have been working with <strong>Visual Studio </strong>
@@ -405,23 +373,23 @@ function Skills() {
                   className="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseFour"
+                  data-bs-target="#collapse2_4"
                   aria-expanded="false"
-                  aria-controls="collapseFour"
+                  aria-controls="collapse2_4"
                 >
                   <img
+                    className="icon"
                     src="/images/web.png"
                     width="30"
                     height="30"
-                    style={{ marginRight: "8px", marginLeft: "6px" }}
                   ></img>
                   Networking
                 </button>
               </h2>
               <div
-                id="collapseFour"
+                id="collapse2_4"
                 className="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
+                data-bs-parent="#accordion2"
               >
                 <div className="accordion-body">
                   I gained my knowledge of <strong>Networking </strong>
@@ -432,29 +400,29 @@ function Skills() {
                 </div>
               </div>
             </div>
-            <div className="accordion-item">
+            <div className="accordion-item odd">
               <h2 className="accordion-header">
                 <button
-                  className="accordion-button collapsed"
+                  className="accordion-button odd collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseFive"
+                  data-bs-target="#collapse2_5"
                   aria-expanded="false"
-                  aria-controls="collapseFive"
+                  aria-controls="collapse2_5"
                 >
                   <img
+                    className="icon"
                     src="/images/algorithm.png"
                     width="30"
                     height="30"
-                    style={{ marginRight: "8px", marginLeft: "6px" }}
                   ></img>
                   Algorithms and Data Structures
                 </button>
               </h2>
               <div
-                id="collapseFive"
+                id="collapse2_5"
                 className="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
+                data-bs-parent="#accordion2"
               >
                 <div className="accordion-body">
                   I learned about
@@ -473,23 +441,23 @@ function Skills() {
                   className="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseSix"
+                  data-bs-target="#collapse2_6"
                   aria-expanded="false"
-                  aria-controls="collapseSix"
+                  aria-controls="collapse2_6"
                 >
                   <img
+                    className="icon"
                     src="/images/linux.png"
                     width="30"
                     height="30"
-                    style={{ marginRight: "8px", marginLeft: "6px" }}
                   ></img>
                   Linux
                 </button>
               </h2>
               <div
-                id="collapseSix"
+                id="collapse2_6"
                 className="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
+                data-bs-parent="#accordion2"
               >
                 <div className="accordion-body">
                   I have gained my knowledge of <strong>Linux</strong> through
@@ -501,29 +469,29 @@ function Skills() {
                 </div>
               </div>
             </div>
-            <div className="accordion-item">
+            <div className="accordion-item odd">
               <h2 className="accordion-header">
                 <button
-                  className="accordion-button collapsed"
+                  className="accordion-button odd collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseSeven"
+                  data-bs-target="#collapse2_7"
                   aria-expanded="false"
-                  aria-controls="collapseSeven"
+                  aria-controls="collapse2_7"
                 >
                   <img
+                    className="icon"
                     src="/images/windows.png"
                     width="30"
                     height="30"
-                    style={{ marginRight: "8px", marginLeft: "6px" }}
                   ></img>
                   Windows
                 </button>
               </h2>
               <div
-                id="collapseSeven"
+                id="collapse2_7"
                 className="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
+                data-bs-parent="#accordion2"
               >
                 <div className="accordion-body">
                   As a lifelong user of <strong>Windows</strong> operating
@@ -541,5 +509,3 @@ function Skills() {
 }
 
 export default Skills;
-
-//github, ux/ui, vscode, network, algorithms and datastructures, linux, windows

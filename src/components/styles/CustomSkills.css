@@ -1,0 +1,146 @@
+.accordion-item {
+  background-color: #424c56 !important;
+  color: #fff !important;
+  
+  text-align: left !important;
+  font-size: 0.9em;
+
+  outline: none !important;
+  border-radius: 0px !important;
+}
+.light-mode .accordion-item {
+  background-color: rgb(255, 254, 255) !important;
+  color: black !important;
+}
+.light-mode .accordion-item.odd {
+  background-color: rgb(247, 247, 247)!important;
+  color: black !important;
+}
+.accordion-header{
+  background-color: red !important;
+}
+
+.accordion-button {
+  background-color: #222222 !important;
+  color: white !important;
+  border-radius: 0px !important;
+  padding: 0.75vh !important; 
+  padding-left: 0px !important;
+  padding-right: 10px !important;
+  font-family: Roboto Mono, monospace !important;
+  font-size: 15px !important; 
+  min-height: 52px !important;
+}
+.accordion-button.odd {
+  background-color: #1a1a1b !important;
+  color: white !important;
+}
+
+.light-mode .accordion-button{
+  background-color: rgb(255, 254, 255) !important;
+  color: #1a1a1b !important;
+}
+
+.light-mode .accordion-item .accordion-button.odd {
+  background-color: rgb(247, 247, 247) !important;
+  color: #1a1a1b !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  color: #fff !important;
+}
+
+.light-mode .accordion-button:not(.collapsed)::after {
+  color: black !important;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #424c56 !important;
+  color: white !important;
+}
+
+.light-mode .accordion-button:not(.collapsed) {
+  background-color: rgb(255, 254, 255) !important;
+  color: black !important;
+}
+.accordion-button:not(.collapsed)::before {
+  border-color: #222 !important;
+}
+
+.accordion-header button:focus,
+.accordion-header button:active {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #222 !important;
+}
+#skills{
+  height: 74px;
+  background: transparent;
+}
+#skillsRow{
+  background-color: rgba(33, 37, 41, 0.99);
+  min-height: calc(100vh - 74px);
+  flex-wrap: wrap;
+  overflow: auto;
+  padding-top: 2vh;
+  padding-bottom: 0rem;
+  padding-left: 9rem;
+  padding-right: 9rem;
+}
+#skillsRow.light-mode {
+  background: rgb(253, 253, 253, 0.95);
+}
+.h5-header {
+  color: #84a59d;
+  font-family: Ubuntu, sans-serif;
+  font-size: 32px;
+  padding-bottom: 1rem;
+  text-shadow:
+    -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 1rem; /* add some bottom margin */
+}
+
+.light-mode .h5-header {
+  text-shadow: none;
+  color: #615eff;
+}
+.icon{
+   margin-right: 8px;
+   margin-left: 6px;
+}
+.light-mode strong{
+  color: #615eff;
+}
+
+
+@media only screen and (min-width: 1600px) {
+    .h5-header {
+        margin-bottom: 8vh !important
+      }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    #skillsRow{
+      padding-left: 0rem !important;
+      padding-right: 0rem !important;
+    }
+    #skillsRow.light-mode {
+      background: rgb(253, 253, 253, 0.95) !important;
+    }
+
+    #skills{
+      background: rgb(33, 37, 41, 0.99) !important;
+    }
+    #skills.light-mode {
+      background: rgb(253, 253, 253, 0.95) !important;
+    }
+    .accordion-item{
+      font-size: 0.85em !important;
+    }
+    .col-lg-6.text-center {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+
+  

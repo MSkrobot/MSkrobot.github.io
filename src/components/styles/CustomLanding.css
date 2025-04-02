@@ -1,0 +1,116 @@
+#landingPage {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#landing {
+    height: 74px;
+    background: rgba(33, 37, 41, 0.99);
+}
+#landing.light-mode {
+  background: rgba(253, 253, 253, 0.95);
+}
+.row-landing{
+  background: rgb(33, 37, 41, 0.99);
+          height: calc(100vh - 74px);
+}
+.row-landing.light-mode{
+  background: rgba(253, 253, 253, 0.95);
+}
+
+
+.greeting h1 {
+
+    overflow: hidden ;
+    white-space: nowrap;
+    animation: typing 0.5s steps(30, end) 0.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    user-select: none;
+    color: #fff;
+    font-family: Ubuntu, sans-serif;
+    font-size: 4rem;
+  }
+
+  .light-mode .greeting h1 {
+    color: #615eff;
+  }
+  
+  .sub-greeting p {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.1rem solid rgb(132, 165, 157);
+    animation: typing 0.75s steps(30, end) 1.3s, blink-caret 1.25s step-end infinite 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    user-select: none;
+    color: #84a59d;
+    font-family: Roboto Mono, monospace;
+    font-size: 2rem;
+    text-align: center;
+  }
+  @media only screen and (max-width: 768px) {
+    .greeting h1 {
+      font-size: 2rem !important;
+    }
+    .sub-greeting p {
+      font-size: 1rem !important;
+      font-family: Roboto Mono, monospace !important;
+    }
+    #landingPage {
+      height: 65vh !important;
+    }
+    .light-mode .sub-greeting p::after {
+      height: 1.54rem !important;
+
+    }
+  }
+
+  .light-mode .sub-greeting p {
+    color: black;
+    border-right: 0rem solid black;
+  }
+  .light-mode .sub-greeting p::after {
+    content: '';
+    display: inline-block;
+    height: 3.09rem;
+    border-right: 0.1rem solid black;
+    animation: blink-caret-black 1.25s step-end infinite;
+    vertical-align: top;
+  }
+  
+  @keyframes typing {
+    0% {
+      width: 0;
+      border-right-color: transparent;
+      opacity: 1; /* Set opacity to 0 at the start */
+    }
+    100% {
+      width: 100%;
+      border-right-color: transparent;
+      opacity: 1; /* Set opacity to 1 at the end */
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: rgb(132, 165, 157);
+    }
+  }
+  @keyframes blink-caret-black {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: black;
+    }
+  }
+  

@@ -1,7 +1,12 @@
 import { useState } from "react";
 import { useInView } from "react-intersection-observer";
+import "./../styles/CustomAbout.css";
 
-function About() {
+interface LandingProps {
+  isLightMode: boolean;
+}
+
+function About({ isLightMode }: LandingProps) {
   const [isEducationExpanded, setisEducationExpanded] = useState(false);
   const [isHobbiesExpanded, setIsHobbiesExpanded] = useState(false);
   const [isLanguagesExpanded, setIsLanguagesExpanded] = useState(false);
@@ -35,99 +40,39 @@ function About() {
   return (
     <>
       <div
-        className="row"
+        className={`row row-landing ${isLightMode ? "light-mode" : ""}`}
         id="about"
-        style={{
-          height: "74px",
-          background:
-            "linear-gradient(to bottom, rgba(33, 37, 41, 0.4), rgba(238, 238, 242, 0.2))",
-        }}
       ></div>
-      <div
-        className="row"
-        id="aboutRow"
-        style={{
-          backgroundColor: "rgba(33, 37, 41, 0.99)",
-          minHeight: "calc(100vh - 74px)",
-          flexWrap: "wrap",
-          overflow: "hidden",
-          paddingLeft: "9rem",
-          paddingRight: "9rem",
-        }}
-      >
+      <div className={`row ${isLightMode ? "light-mode" : ""}`} id="aboutRow">
         <div className="col">
-          <div
-            className="row row-about justify-content-center align-items-center"
-            style={{
-              paddingTop: "2vh",
-              paddingBottom: "0rem",
-            }}
-          >
-            <div className="col-lg-12" style={{ textAlign: "center" }}>
-              <h5
-                style={{
-                  color: "#84a59d",
-                  fontFamily: "Ubuntu, sans-serif",
-                  fontSize: "32px",
-                  textShadow:
-                    "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000",
-                  textAlign: "right",
-                }}
-              >
-                About Me
-              </h5>
+          <div className="row row-about">
+            <div className="col" style={{ textAlign: "center" }}>
+              <h5 className="text-about-me">About Me</h5>
             </div>
           </div>
-          <div
-            className="row justify-content-center align-items-center"
-            style={{
-              paddingTop: "0rem",
-              paddingBottom: "2vh",
-            }}
-          >
+          <div className="row row-description">
             <div
               className="col-lg-4 text-center"
               ref={ref}
               style={{ userSelect: "none" }}
             >
               <img
-                src="/images/me.jpg"
+                src="/images/me1.jpg"
                 width="224"
                 height="224"
-                className="d-inline-block align-center ms-2 me-2"
+                className="d-inline-block ms-2 me-2 my-photo"
                 alt=""
-                style={{
-                  borderRadius: "3%",
-                  border: "1px solid rgb(59, 66, 74)",
-                  marginTop: "2vh",
-                  marginBottom: "4vh",
-                }}
               ></img>
             </div>
-            <div
-              className="col col-about"
-              style={{ textAlign: "center", display: "none" }}
-            >
-              <h5
-                style={{
-                  color: "#84a59d",
-                  fontFamily: "Ubuntu, sans-serif",
-                  fontSize: "32px",
-                  textShadow:
-                    "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000",
-                }}
-              >
-                About Me
-              </h5>
+            <div className="col col-about">
+              <h5 className="text-about-me">About Me</h5>
             </div>
             <div className="col-lg-8" style={{ paddingRight: "0px" }}>
               <div
-                className="card h-100"
+                className="card"
                 style={{
-                  width: "100%",
                   border: "none",
                   backgroundColor: "transparent",
-                  transition: "all 1.5s ease-out",
                   transform: inView ? "translateX(0)" : "translateX(1em)",
                   visibility: inView ? "visible" : "hidden",
                   opacity: inView ? "1" : "0.5",
@@ -135,12 +80,13 @@ function About() {
               >
                 <div className="card-body">
                   <p className="text">
-                    Hi there! I'm a 23-year-old student living in Poland, and
-                    I'm currently on the lookout for a commercial job.
-                    Coding is my passion and I have been studying computer
-                    science for the past two years, mastering my skills in
-                    algorithms, data structures and web development. I'm eager
-                    to apply this knowledge in a professional setting.
+                    <span className="hello-there">Hello there!</span> I'm a
+                    21-year-old student living in Poland, and I'm currently on
+                    the lookout for my first commercial job. Coding is my
+                    passion and I have been studying computer science for the
+                    past two years, honing my skills in algorithms, data
+                    structures and web development. I'm eager to apply this
+                    knowledge in a professional setting.
                   </p>
                 </div>
               </div>
@@ -157,21 +103,22 @@ function About() {
               <div
                 className="card"
                 style={{
-                  width: "100%",
                   minHeight: isEducationExpanded ? "100%" : "initial",
-                  transition: "all 1.5s ease-out",
                   transitionDelay: "0.1s",
                   transform: inView1 ? "translateY(0)" : "translateY(20em)",
                   visibility: inView1 ? "visible" : "hidden",
-                  opacity: inView ? "1" : "0.5",
                 }}
               >
                 <div className="card-body">
                   <h5 className="card-header">Education</h5>
                   <p className="card-text">
+                    I'm currently a second-year computer science student at
+                    Jagiellonian University in Krakow, Poland. Prior to this, I
+                    graduated from High School in Kielce, I did well on the
+                    advanced level exams in subjects such as
                     {isEducationExpanded
-                      ? "I'm currently a third-year computer science student at Jagiellonian University in Krakow, Poland. Prior to this, I graduated from High School in Kielce, I did well on the advanced level exams in subjects such as mathematics, English, and geography. In my time at university so far, I have completed numerous projects, both independently and as a part of a team. During this time, I have completed several courses that particularly interested me, for example Algorithms and Data Structures. I am always looking for ways to apply this knowledge to real-world problems."
-                      : "I'm currently a third-year computer science student at Jagiellonian University in Krakow, Poland. Prior to this, I graduated from High School in Kielce, I did well on the advanced level exams in subjects such as ..."}
+                      ? " mathematics, English, and geography. In my time at university so far, I have completed numerous projects, both independently and as a part of a team. During this time, I have completed several courses that particularly interested me, for example Algorithms and Data Structures. I am always looking for ways to apply this knowledge to real-world problems."
+                      : "..."}
                     <a
                       href="#about"
                       onClick={(event) => {
@@ -179,7 +126,6 @@ function About() {
                         event.preventDefault();
                       }}
                       className="read-more-link"
-                      style={{ width: "100%", textAlign: "center" }}
                     >
                       {isEducationExpanded ? "Read less" : "Read more"}
                     </a>
@@ -195,21 +141,22 @@ function About() {
               <div
                 className="card"
                 style={{
-                  width: "100%",
                   minHeight: isHobbiesExpanded ? "100%" : "initial",
-                  transition: "all 1.5s ease-out",
                   transitionDelay: "0s",
                   transform: inView2 ? "translateY(0)" : "translateY(20em)",
                   visibility: inView2 ? "visible" : "hidden",
-                  opacity: inView ? "1" : "0.5",
                 }}
               >
                 <div className="card-body">
                   <h5 className="card-header">Hobbies</h5>
                   <p className="card-text">
+                    In my free time, I enjoy pursuing a variety of hobbies that
+                    keep me active and engaged. I'm an avid sports enthusiast,
+                    and I enjoy cycling and playing football. In addition to
+                    sports, I also have a passion for
                     {isHobbiesExpanded
-                      ? "In my free time, I enjoy pursuing a variety of hobbies that keep me active and engaged. I'm an avid sports enthusiast, and I enjoy cycling and playing football. In addition to sports, I also have a passion for music and have been playing both piano and guitar for several years. I find that playing music is not only a creative outlet, but it also helps me unwind and stay focused. I also enjoy the challenge of algorithmic problems, I find solving them very rewarding. These hobbies have not only brought me a lot of joy, but also keep my body and mind in good shape."
-                      : "In my free time, I enjoy pursuing a variety of hobbies that keep me active and engaged. I'm an avid sports enthusiast, and I enjoy cycling and playing football. In addition to sports, I also have a passion for ..."}
+                      ? " music and have been playing both piano and guitar for several years. I find that playing music is not only a creative outlet, but it also helps me unwind and stay focused. I also enjoy the challenge of algorithmic problems, I find solving them very rewarding. These hobbies have not only brought me a lot of joy, but also keep my body and mind in good shape."
+                      : "..."}
                     <a
                       href="#about"
                       onClick={(event) => {
@@ -217,7 +164,6 @@ function About() {
                         event.preventDefault();
                       }}
                       className="read-more-link"
-                      style={{ width: "100%", textAlign: "center" }}
                     >
                       {isHobbiesExpanded ? "Read less" : "Read more"}
                     </a>
@@ -235,21 +181,22 @@ function About() {
               <div
                 className="card"
                 style={{
-                  width: "100%",
                   minHeight: isLanguagesExpanded ? "100%" : "initial",
-                  transition: "all 1.5s ease-out",
                   transitionDelay: "0.1s",
                   transform: inView3 ? "translateY(0)" : "translateY(20em)",
                   visibility: inView3 ? "visible" : "hidden",
-                  opacity: inView ? "1" : "0.5",
                 }}
               >
                 <div className="card-body">
                   <h5 className="card-header">Languages</h5>
                   <p className="card-text">
+                    I am a native Polish speaker, I have a strong foundation in
+                    my mother tongue. In addition, I have advanced knowledge of
+                    English, which I've honed through years of study, immersion,
+                    and regular
                     {isLanguagesExpanded
-                      ? "I am a native Polish speaker, I have a strong foundation in my mother tongue. In addition, I have advanced knowledge of English, which I've honed through years of study, immersion, and regular interactions with English-speaking people. I also enjoy watching movies in English, which helps me to maintain my language skills and stay up-to-date with the latest colloquialisms and expressions. When it comes to coding, I prefer to learn in English, as it is the primary language of the industry and allows me to access a wealth of resources and knowledge from around the world."
-                      : "I am a native Polish speaker, I have a strong foundation in my mother tongue. In addition, I have advanced knowledge of English, which I've honed through years of study, immersion, and regular interactions ..."}
+                      ? " interactions with English-speaking people. I also enjoy watching movies in English, which helps me to maintain my language skills and stay up-to-date with the latest colloquialisms and expressions. When it comes to coding, I prefer to learn in English, as it is the primary language of the industry and allows me to access a wealth of resources and knowledge from around the world."
+                      : "..."}
                     <a
                       href="#about"
                       onClick={(event) => {
@@ -257,7 +204,6 @@ function About() {
                         event.preventDefault();
                       }}
                       className="read-more-link"
-                      style={{ width: "100%", textAlign: "center" }}
                     >
                       {isLanguagesExpanded ? "Read less" : "Read more"}
                     </a>

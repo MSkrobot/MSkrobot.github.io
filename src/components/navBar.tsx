@@ -1,7 +1,15 @@
 import { useState, useEffect } from "react";
-import "./CustomNavbar.css";
+import ReactSwitch from "react-switch";
+import "./styles/CustomNavbar.css";
+import checkedIcon from "/images/sunny.png";
+import uncheckedIcon from "/images/night-mode.png";
 
-function CustomNavbar() {
+interface NavBarProps {
+  onLightModeToggle: () => void;
+  isLightMode: boolean;
+}
+
+function CustomNavbar({ onLightModeToggle, isLightMode }: NavBarProps) {
   const [activeLink, setActiveLink] = useState("");
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -20,12 +28,15 @@ function CustomNavbar() {
 
   return (
     <>
-      <nav className="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-        <div className="container-fluid">
+      <nav
+        className={`navbar navbar-expand-sm navbar-dark fixed-top ${
+          isLightMode ? "light-mode" : ""
+        }`}
+      >
+        <div className="container-fluid" id="navCont">
           <a
             className="navbar-brand"
             href="#landing"
-            style={{ color: "#e0e1dd" }}
             onClick={() => {
               setIsExpanded(false);
               setActiveLink("landing");
@@ -36,7 +47,7 @@ function CustomNavbar() {
             }}
           >
             <img
-              src="/images/M6.png"
+              src={`/images/M${isLightMode ? "11" : "8"}.png`}
               width="40"
               height="40"
               className="d-inline-block align-center ms-2 me-2"
@@ -44,6 +55,24 @@ function CustomNavbar() {
             ></img>
             Michał Skrobot
           </a>
+          <div className="switch ms-auto me-2">
+            <ReactSwitch
+              onChange={onLightModeToggle}
+              checked={isLightMode}
+              onColor="#fcd121"
+              offColor="#1275cc"
+              uncheckedIcon={
+                <div className="react-switch-handle">
+                  <img src={checkedIcon} alt="Checked Icon" />
+                </div>
+              }
+              checkedIcon={
+                <div className="react-switch-handle">
+                  <img src={uncheckedIcon} alt="Unchecked Icon" />
+                </div>
+              }
+            />
+          </div>
           <button
             className="navbar-toggler navbar-toggler-sm"
             type="button"

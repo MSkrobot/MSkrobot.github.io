@@ -1,0 +1,120 @@
+
+#contact{
+  height: 74px;
+  background: transparent;
+}
+#contactRow{
+  height: calc(100vh - 74px);
+  background: rgb(253, 253, 253, 0.99);
+}
+
+#contactCol{
+  text-align: center;
+  padding-top: 2vh;
+  padding-left: 9rem;
+  padding-right: 9rem;
+}
+.contactMe{
+  color: black;
+  font-family: Ubuntu, sans-serif;
+  font-size: 34px;
+  margin-bottom: 10vh;
+  text-align: right;
+  border-bottom: 1px solid lightgray !important;
+  padding-bottom: 1rem;
+}
+.light-mode .contactMe{
+  color: #615eff;
+}
+.contact-icon{
+  margin-right: 8px;
+  user-select: none;
+}
+.thanks{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    text-align: center !important;
+    font-family: Ubuntu, sans-serif !important;
+    font-size: 3.5rem;
+    color:#f3f3f2;
+    user-select: text;
+  }
+
+.footer{
+    background-color: #1a1a1b;
+    color: gray;
+    text-align: center;
+    padding: 0px !important;
+    word-spacing: 5px;
+    font-size: 15px;
+    font-family: Lobster, cursive, sans-serif;
+    bottom: 0 !important;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    user-select: none;
+    height: 9.375rem;
+    text-align: center;
+  }
+
+  ul {
+    font-family: "Ubuntu, sans-serif" !important;
+  }
+  .list-group-item {
+    background: transparent !important;
+    padding-top: 2vh !important;
+    padding-bottom: 2vh !important;
+    font-size: 16px !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 0px !important;
+    border-top: none !important;
+  }
+  .light-mode .footer{
+    background-color: transparent !important;
+    color: rgb(99, 94, 104);
+    }
+  .light-mode .thanks{
+    color: black;
+  }
+
+@media only screen and (min-width: 1600px) {
+      .contactMe{
+        margin-bottom: 14vh !important;
+      }
+  }
+  @media only screen and (max-width: 991.20px) {
+      .contactMe{
+        text-align: center !important;
+      }
+  }
+
+  @media only screen and (max-width: 768px) {
+  
+    #contactCol{
+      padding-left: 0rem !important;
+      padding-right: 0rem !important;
+      }
+    
+    #contact{
+      background: rgb(33, 37, 41, 0.99) !important;
+    }
+    #contact.light-mode {
+      background: rgb(253, 253, 253, 0.95) !important;
+    }
+    .thanks{
+      font-size: 2.5rem !important;
+    }
+    .footer{
+      font-family: Lobster, cursive, sans-serif !important;
+      font-size: 12px !important;
+      word-spacing: 2px !important;
+    }
+  }
