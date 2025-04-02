@@ -44,7 +44,7 @@ function Contact() {
             <li className="list-group-item">
               {" "}
               <img
-                src="src\images\phone-call.png"
+                src="/images/phone-call.png"
                 width="30"
                 height="30"
                 style={{
@@ -56,7 +56,7 @@ function Contact() {
             </li>
             <li className="list-group-item">
               <img
-                src="src\images\4550857_email_gmail_mail_sending_yahoo_icon.png"
+                src="/images/4550857_email_gmail_mail_sending_yahoo_icon.png"
                 width="30"
                 height="30"
                 style={{
@@ -68,7 +68,7 @@ function Contact() {
             </li>
             <li className="list-group-item">
               <img
-                src="src\images\github.png"
+                src="/images/github.png"
                 width="30"
                 height="30"
                 style={{
@@ -80,7 +80,7 @@ function Contact() {
             </li>
             <li className="list-group-item">
               <img
-                src="src\images\linkedin.png"
+                src="/images/linkedin.png"
                 width="30"
                 height="30"
                 style={{

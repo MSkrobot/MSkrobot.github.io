@@ -53,7 +53,7 @@ function Skills() {
                   aria-controls="collapseOne1"
                 >
                   <img
-                    src="src\images\html-5.png"
+                    src="/images/html-5.png"
                     width="40"
                     height="40"
                     style={{ marginRight: "4px" }}
@@ -86,7 +86,7 @@ function Skills() {
                   aria-controls="collapseTwo2"
                 >
                   <img
-                    src="src\images\css-3.png"
+                    src="/images/css-3.png"
                     width="40"
                     height="40"
                     style={{ marginRight: "4px" }}
@@ -119,7 +119,7 @@ function Skills() {
                   aria-controls="collapseThree3"
                 >
                   <img
-                    src="src\images\js.png"
+                    src="/images/js.png"
                     width="30"
                     height="30"
                     style={{ marginRight: "8px", marginLeft: "6px" }}
@@ -154,7 +154,7 @@ function Skills() {
                   aria-controls="collapse4"
                 >
                   <img
-                    src="src\images\python.png"
+                    src="/images/python.png"
                     width="30"
                     height="30"
                     style={{ marginRight: "8px", marginLeft: "6px" }}
@@ -188,7 +188,7 @@ function Skills() {
                   aria-controls="collapse5"
                 >
                   <img
-                    src="src\images\java.png"
+                    src="/images/java.png"
                     width="30"
                     height="30"
                     style={{ marginRight: "8px", marginLeft: "6px" }}
@@ -222,7 +222,7 @@ function Skills() {
                   aria-controls="collapse6"
                 >
                   <img
-                    src="src\images\c-.png"
+                    src="/images/c-.png"
                     width="30"
                     height="30"
                     style={{ marginRight: "8px", marginLeft: "6px" }}
@@ -257,7 +257,7 @@ function Skills() {
                   aria-controls="collapse7"
                 >
                   <img
-                    src="src\images\sql-server.png"
+                    src="/images/sql-server.png"
                     width="30"
                     height="30"
                     style={{ marginRight: "8px", marginLeft: "6px" }}
@@ -312,7 +312,7 @@ function Skills() {
                   aria-controls="collapseOne"
                 >
                   <img
-                    src="src\images\github.png"
+                    src="/images/github.png"
                     width="30"
                     height="30"
                     style={{ marginRight: "8px", marginLeft: "6px" }}
@@ -344,7 +344,7 @@ function Skills() {
                   aria-controls="collapseTwo"
                 >
                   <img
-                    src="src\images\ux.png"
+                    src="src/images/ux.png"
                     width="30"
                     height="30"
                     style={{ marginRight: "8px", marginLeft: "6px" }}
@@ -376,7 +376,7 @@ function Skills() {
                   aria-controls="collapseThree"
                 >
                   <img
-                    src="src\images\visual-studio.png"
+                    src="/images/visual-studio.png"
                     width="30"
                     height="30"
                     style={{ marginRight: "8px", marginLeft: "6px" }}
@@ -410,7 +410,7 @@ function Skills() {
                   aria-controls="collapseFour"
                 >
                   <img
-                    src="src\images\web.png"
+                    src="/images/web.png"
                     width="30"
                     height="30"
                     style={{ marginRight: "8px", marginLeft: "6px" }}
@@ -443,7 +443,7 @@ function Skills() {
                   aria-controls="collapseFive"
                 >
                   <img
-                    src="src\images\algorithm.png"
+                    src="/images/algorithm.png"
                     width="30"
                     height="30"
                     style={{ marginRight: "8px", marginLeft: "6px" }}
@@ -478,7 +478,7 @@ function Skills() {
                   aria-controls="collapseSix"
                 >
                   <img
-                    src="src\images\linux.png"
+                    src="/images/linux.png"
                     width="30"
                     height="30"
                     style={{ marginRight: "8px", marginLeft: "6px" }}
@@ -512,7 +512,7 @@ function Skills() {
                   aria-controls="collapseSeven"
                 >
                   <img
-                    src="src\images\windows.png"
+                    src="/images/windows.png"
                     width="30"
                     height="30"
                     style={{ marginRight: "8px", marginLeft: "6px" }}

@@ -91,7 +91,7 @@ function About() {
               style={{ userSelect: "none" }}
             >
               <img
-                src="/images/me1.jpg"
+                src="/images/me.jpg"
                 width="224"
                 height="224"
                 className="d-inline-block align-center ms-2 me-2"
