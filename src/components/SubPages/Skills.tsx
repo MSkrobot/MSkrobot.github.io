@@ -31,143 +31,75 @@ function Skills({ isLightMode }: LandingProps) {
                 >
                   <img
                     className="icon"
-                    src="/images/html-5.png"
-                    width="40"
-                    height="40"
-                    style={{ marginLeft: "0px", marginRight: "4px" }}
+                    src="/images/www.png"
+                    width="30"
+                    height="30"
                   ></img>
-                  HTML
+                  Frontend Web Development
                 </button>
               </h2>
               <div
-                id="collapse1_1"
-                className="accordion-collapse collapse"
-                data-bs-parent="#accordion1"
+                  id="collapse1_1"
+                  className="accordion-collapse collapse"
+                  data-bs-parent="#accordion1"
               >
                 <div className="accordion-body">
-                  I learned <strong>HTML</strong> way back in primary school.
-                  I've managed to stay up to date with it over the years thanks
-                  to my involvement in numerous web projects. As a result, I
-                  know HTML pretty well by now and feel quite comfortable
-                  creating and editing HTML code.
+                  I began learning <strong>web development</strong> back in school, starting with the fundamentals—HTML,
+                  CSS, and vanilla JavaScript.
+                  As my career progressed, I expanded my skills to include more advanced technologies
+                  like <strong>React.js</strong>.
+                  I’ve worked on numerous commercial projects where I built frontends using standard web technologies,
+                  as well as modern frameworks like React.js,
+                  always focusing on clean, responsive, and user-friendly interfaces.
                 </div>
+
               </div>
             </div>
             <div className="accordion-item">
               <h2 className="accordion-header">
                 <button
-                  className="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse1_2"
-                  aria-expanded="false"
-                  aria-controls="collapse1_2"
+                    className="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse1_2"
+                    aria-expanded="false"
+                    aria-controls="collapse1_2"
                 >
                   <img
-                    className="icon"
-                    src="/images/css-3.png"
-                    width="40"
-                    height="40"
-                    style={{ marginLeft: "0px", marginRight: "4px" }}
+                      className="icon"
+                      src="/images/nodejs.png"
+                    width="30"
+                    height="30"
                   ></img>
-                  CSS
+                  Node.js/Express.js
                 </button>
               </h2>
               <div
-                id="collapse1_2"
-                className="accordion-collapse collapse"
-                data-bs-parent="#accordion1"
+                  id="collapse1_2"
+                  className="accordion-collapse collapse"
+                  data-bs-parent="#accordion1"
               >
                 <div className="accordion-body">
-                  I learned <strong>CSS</strong> early on as another fundamental
-                  web development language. I focus on making my websites
-                  responsive, visually appealing and user-friendly. I'm
-                  confident in my ability to use CSS to craft compelling designs
-                  and layouts for web projects.
+                  I've been using mostly <strong>Node.js</strong> with <strong>Express.js</strong> to communicate
+                  with databases in my projects. I have a solid grasp of building RESTful APIs, handling HTTP requests
+                  and responses, and structuring applications using controllers and services. I'm comfortable working
+                  with middleware, routing logic, and asynchronous operations to ensure clean, maintainable backends
+                  that efficiently interact with databases.
                 </div>
               </div>
             </div>
             <div className="accordion-item odd">
               <h2 className="accordion-header">
                 <button
-                  className="accordion-button odd collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse1_3"
-                  aria-expanded="false"
-                  aria-controls="collapse1_3"
+                    className="accordion-button odd collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse1_3"
+                    aria-expanded="false"
+                    aria-controls="collapse1_3"
                 >
                   <img
-                    className="icon"
-                    src="/images/js.png"
-                    width="30"
-                    height="30"
-                  ></img>
-                  JavaScript
-                </button>
-              </h2>
-              <div
-                id="collapse1_3"
-                className="accordion-collapse collapse"
-                data-bs-parent="#accordion1"
-              >
-                <div className="accordion-body">
-                  I've worked with <strong>JavaScript</strong>, which is an
-                  essential web development language. I'm familiar with some of
-                  the newest features of JavaScript, including async/await,
-                  destructuring, and arrow functions. While I still have things
-                  to learn, this knowledge has allowed me to create dynamic and
-                  interactive web applications that deliver a great user
-                  experience.
-                </div>
-              </div>
-            </div>
-            <div className="accordion-item">
-              <h2 className="accordion-header">
-                <button
-                  className="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse1_4"
-                  aria-expanded="false"
-                  aria-controls="collapse1_4"
-                >
-                  <img
-                    className="icon"
-                    src="/images/python.png"
-                    width="30"
-                    height="30"
-                  ></img>
-                  Python
-                </button>
-              </h2>
-              <div
-                id="collapse1_4"
-                className="accordion-collapse collapse"
-                data-bs-parent="#accordion1"
-              >
-                <div className="accordion-body">
-                  I first learned <strong>Python</strong> back in high school
-                  and continued to build on my knowledge of the language through
-                  several university courses. I am comfortable using Python for
-                  a variety of programming tasks and particularly enjoy working
-                  with it for its ease of use and versatility, thanks to its
-                  extensive libraries.
-                </div>
-              </div>
-            </div>
-            <div className="accordion-item odd">
-              <h2 className="accordion-header">
-                <button
-                  className="accordion-button odd collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse1_5"
-                  aria-expanded="false"
-                  aria-controls="collapse1_5"
-                >
-                  <img
-                    className="icon"
+                      className="icon"
                     src="/images/java.png"
                     width="30"
                     height="30"
@@ -176,87 +108,156 @@ function Skills({ isLightMode }: LandingProps) {
                 </button>
               </h2>
               <div
-                id="collapse1_5"
-                className="accordion-collapse collapse"
-                data-bs-parent="#accordion1"
+                  id="collapse1_3"
+                  className="accordion-collapse collapse"
+                  data-bs-parent="#accordion1"
               >
                 <div className="accordion-body">
-                  <strong>Java</strong> is my favourite programming language,
-                  and I've completed several university courses that required
-                  Java programming. I find Java to be a powerful and flexible
-                  language with strong object-oriented principles and a robust
-                  standard library. With Java, I'm able to write efficient and
-                  reliable code for a variety of applications and platforms.
+                  I started working with <strong>Java</strong> during my academic studies, where I learned the basics of
+                  object-oriented programming.
+                  Later, I got familiar with the <strong>Spring Framework</strong>, mainly Spring Boot and Spring Data,
+                  which I use to build efficient backend systems.
+                  I also learned <strong>Kotlin</strong> during my internship at Atlassian, appreciating its modern and
+                  expressive syntax.
                 </div>
               </div>
             </div>
             <div className="accordion-item">
               <h2 className="accordion-header">
                 <button
-                  className="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse1_6"
-                  aria-expanded="false"
-                  aria-controls="collapse1_6"
+                    className="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse1_4"
+                    aria-expanded="false"
+                    aria-controls="collapse1_4"
                 >
                   <img
-                    className="icon"
-                    src="/images/c-.png"
+                      className="icon"
+                    src="/images/user-interface.png"
                     width="30"
                     height="30"
                   ></img>
-                  C++
+                  Mobile App Development
                 </button>
               </h2>
               <div
-                id="collapse1_6"
-                className="accordion-collapse collapse"
-                data-bs-parent="#accordion1"
+                  id="collapse1_4"
+                  className="accordion-collapse collapse"
+                  data-bs-parent="#accordion1"
               >
                 <div className="accordion-body">
-                  <strong>C++</strong> was actually the first programming
-                  language I learned, and I have a deep appreciation for its
-                  power and versatility. While it can be complex and challenging
-                  to learn, C++ offers a tremendous amount of control and
-                  flexibility over memory management and system resources. I
-                  find that having learned C++ as my first language, learning
-                  other programming languages has become much easier for me.
+                  I tried <strong>mobile app development</strong> by using <strong>React
+                  Native</strong> with <strong>Expo</strong>,
+                  which allowed me to build cross-platform applications with a single codebase.
+                  I’ve developed several commercial projects using React Native, focusing on smooth UI, navigation, and
+                  API integration.
+                  I appreciate how React Native combines the flexibility of JavaScript with native mobile capabilities
+                  to deliver great user experiences.
                 </div>
               </div>
             </div>
             <div className="accordion-item odd">
               <h2 className="accordion-header">
                 <button
-                  className="accordion-button odd collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapse1_7"
-                  aria-expanded="false"
-                  aria-controls="collapse1_7"
+                    className="accordion-button odd collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse1_5"
+                    aria-expanded="false"
+                    aria-controls="collapse1_5"
                 >
                   <img
-                    className="icon"
-                    src="/images/sql-server.png"
+                      className="icon"
+                      src="/images/python.png"
                     width="30"
                     height="30"
                   ></img>
-                  MSSQL Server
+                  Python
                 </button>
               </h2>
               <div
-                id="collapse1_7"
-                className="accordion-collapse collapse"
-                data-bs-parent="#accordion1"
+                  id="collapse1_5"
+                  className="accordion-collapse collapse"
+                  data-bs-parent="#accordion1"
               >
                 <div className="accordion-body">
-                  I was taught <strong>MSSQL Server</strong> as part of my
-                  university databases course, I chose to focus on that language
-                  for my projects. I found that working with MS SQL Server was a
-                  great experience, as it allowed me to develop complex queries
-                  and optimize database performance. With this experience, I'm
-                  confident in my ability to design, build, and maintain robust
-                  database systems using MS SQL Server.
+                  I've been using <strong>Python</strong> both for learning and building small projects.
+                  I explored <strong>Pygame</strong> to create simple 2D games, which helped me understand event
+                  handling and game loops.
+                  I also used <strong>Matplotlib</strong> for data visualization in various scripts, especially for
+                  plotting charts and analyzing results.
+                  During my studies, I used <strong>NumPy</strong> and <strong>Pandas</strong> extensively to solve
+                  mathematical problems and tasks related to probability and statistics.
+                  Python’s simplicity makes it my go-to language for quick prototypes, data analysis and academic
+                  exercises.
+                </div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <h2 className="accordion-header">
+                <button
+                    className="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse1_6"
+                    aria-expanded="false"
+                    aria-controls="collapse1_6"
+                >
+                  <img
+                      className="icon"
+                      src="/images/c-.png"
+                      width="30"
+                      height="30"
+                  ></img>
+                  C++
+                </button>
+              </h2>
+              <div
+                  id="collapse1_6"
+                  className="accordion-collapse collapse"
+                  data-bs-parent="#accordion1"
+              >
+                <div className="accordion-body">
+                  <strong>C++</strong> was the first programming language I learned, and it gave me a solid foundation
+                  in programming concepts and memory management.
+                  I’ve used it primarily for solving algorithmic problems and participating in coding challenges.
+                  Thanks to its performance and low-level control, C++ remains my go-to choice for tasks that require
+                  speed and precision.
+                </div>
+              </div>
+            </div>
+            <div className="accordion-item odd">
+              <h2 className="accordion-header">
+                <button
+                    className="accordion-button odd collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse1_7"
+                    aria-expanded="false"
+                    aria-controls="collapse1_7"
+                >
+                  <img
+                    className="icon"
+                    src="/images/sql.png"
+                    width="30"
+                    height="30"
+                  ></img>
+                  Databases
+                </button>
+              </h2>
+              <div
+                  id="collapse1_7"
+                  className="accordion-collapse collapse"
+                  data-bs-parent="#accordion1"
+              >
+                <div className="accordion-body">
+                  I've worked with several relational databases, including <strong>MS SQL
+                  Server</strong>, <strong>PostgreSQL</strong>, and <strong>SQLite</strong>.
+                  I’m comfortable designing schemas, writing complex SQL queries, and performing joins, aggregations,
+                  and transactions.
+                  I’ve used these databases in both academic and commercial projects, depending on the scale and
+                  requirements of the application.
                 </div>
               </div>
             </div>
@@ -265,14 +266,14 @@ function Skills({ isLightMode }: LandingProps) {
         <div className="col-lg-6 text-center">
           <h5 className="h5-header">Other Skills</h5>
           <div
-            className="accordion accordion-flush"
-            id="accordion2"
-            style={{ paddingBottom: "8vh" }}
+              className="accordion accordion-flush"
+              id="accordion2"
+              style={{paddingBottom: "8vh"}}
           >
             <div className="accordion-item odd">
               <h2 className="accordion-header">
                 <button
-                  className="accordion-button odd collapsed"
+                    className="accordion-button odd collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapse2_1"
